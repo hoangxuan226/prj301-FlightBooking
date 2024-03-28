@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    /* height: 200vh; */
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+.container {
+    margin: 0;
+}
+
+.mainContent {
+    border-top: 5px solid gray;
+    box-shadow: 0px 0px 2px 2px rgb(193, 193, 193);
+}
+.introduction {
+    text-align: center;
+    padding: 20px 0px;
+}
+.introduction p {
+    font-weight: bold;
+    font-size: 30px;
+}
+.btn-control {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #ff87ad;
+    padding: 0px 30px;
+    border-top: 2px solid rgb(187, 187, 187);
+    border-bottom: 2px solid rgb(187, 187, 187);
+}
+
+.btn-control a{
+    height: 70px;
+    margin: 10px 0;
+}
+
+
+.btn-control-adjust {
+    display: inline-block;
+    /*padding: 15px 30px;*/
+    font-weight: bold;
+    height: 100%;
+    /*margin: 10px 0px;*/
+    width: 250px;
+    background-color: #fdcedd;
+    border: none;
+    border-radius: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.2s;
+}
+.btn-control-adjust:hover {
+    background-color: #ffff;
+    transition: all 0.1s;
+}
+
+.btn-control-adjust:active {
+    background-color: #ffff;
+    box-shadow: 0 2px #b4b4b4;
+    transform: translateY(1.5px);
+}
+.listHeader {
+    background-color: #fbd8e3;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+.textHeader {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 10px 0px;
+}
+.btnHeader {
+    display: flex;
+    position: absolute;
+    z-index: 999;
+    top: 50%;
+    left: 88%;
+    /* right: 1%; */
+    transform: translate(-50%, -50%);
+}
+
+.btnHeader form{
+    display: flex;
+}
+
+.btnHeader button {
+    padding: 10px 15px;
+    margin-right: 7px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.05s;
+}
+.btnHeader button:active {
+    background-color: black;
+    color: white;
+    transition: all 0.1s;
+    box-shadow: 0 2px #b4b4b4;
+    transform: translateY(1px);
+}
+.btnHeader input {
+    margin-right: 5px;
+}
+.btn-type-list {
+    display: flex;
+    position: absolute;
+    z-index: 999;
+    top: 50%;
+    left: 80px;
+    transform: translate(-50%, -50%);
+}
+.btn-type-list button {
+    padding: 10px 20px;
+    margin-left: 0.1rem;
+    margin-bottom: 2px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.05s;
+}
+.btn-type-list button:active {
+    background-color: black;
+    color: white;
+    transition: all 0.1s;
+    box-shadow: 0 2px #b4b4b4;
+    transform: translateY(1px);
+}
+.planeTbl {
+    width: 100%;
+    border: 1px solid black;
+    background-color: #fdb3ca;
+    border-collapse: collapse;
+}
+.planeTblBody {
+    padding: 10px 5px;
+}
+.planeTblRow {
+    text-align: center;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+.planeTblRow td {
+    background-color: rgb(248, 241, 241);
+    border: 1px solid rgb(70, 70, 70);
+}
+.planeTblRow td button {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 30px;
+    margin: 5px 8px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.1s;
+}
+.planeTblRow td button:active {
+    background-color: black;
+    color: white;
+    transition: all 0.05s;
+    box-shadow: 0 2px #b4b4b4;
+    transform: translateY(1px);
+}
+.planeTbl th {
+    text-align: center;
+    width: 25%;
+    height: 34px;
+    border: 1px solid black;
+}
+.footer {
+    text-align: center;
+    background-color: #fbd8e3;
+    /* padding: 1px 0px; */
+}
+
+.footer-btn {
+    display: inline-block;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0px 15px;
+    margin: 10px 20px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.1s;
+}
+.footer-btn:active {
+    background-color: white;
+    transition: all 0.1s;
+    box-shadow: 0 2px #b4b4b4;
+    transform: translateY(1px);
+}
+/* flight list */
+.flightTbl {
+    width: 100%;
+    border: 1px solid black;
+    background-color: #fdb3ca;
+    border-collapse: collapse;
+}
+.flightTblBody {
+    padding: 10px 5px;
+}
+.flightTblRow {
+    text-align: center;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+.flightTblRow td {
+    background-color: rgb(248, 241, 241);
+    border: 1px solid rgb(70, 70, 70);
+}
+.flightTblRow td button {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    width: 100px;
+    height: 33px;
+    margin: 5px 8px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.1s;
+}
+.flightTblRow td button:active {
+    background-color: black;
+    color: white;
+    transition: all 0.05s;
+    box-shadow: 0 2px #b4b4b4;
+    transform: translateY(1px);
+}
+.flightTbl th {
+    text-align: center;
+    width: 7.6%;
+    height: 34px;
+    border: 1px solid black;
+}
+/* cusList */
+.cusTbl {
+    width: 100%;
+    border: 1px solid black;
+    background-color: #fdb3ca;
+    border-collapse: collapse;
+}
+.cusTblBody {
+    padding: 10px 5px;
+}
+.cusTblRow {
+    text-align: center;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+.cusTblRow td {
+    background-color: rgb(248, 241, 241);
+    border: 1px solid rgb(70, 70, 70);
+    padding: 0px 5px;
+}
+.cusTblRow td button {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 30px;
+    margin: 5px 8px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.1s;
+}
+.cusTblRow td button:active {
+    background-color: black;
+    color: white;
+    transition: all 0.05s;
+    box-shadow: 0 2px #b4b4b4;
+    transform: translateY(1px);
+}
+.cusTbl th {
+    text-align: center;
+    width: 9%;
+    height: 34px;
+    border: 1px solid black;
+}
+.active {
+    background-color: white;
+}
+.hidden {
+    display: none;
+}

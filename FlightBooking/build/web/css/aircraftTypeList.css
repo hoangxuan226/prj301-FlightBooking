@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Times New Roman", Times, serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    overflow: hidden;
+}
+
+.container { 
+    width: 100%; 
+    height: 100vh;
+    background-image: linear-gradient(to bottom, white, transparent), url('../images/background.png');
+    background-size: cover;
+}
+
+.mainContent {
+    border-top: 5px solid gray;
+    box-shadow: 0px 0px 2px 2px rgb(193, 193, 193);
+}
+
+.listHeader {
+    background-color: #fbd8e3;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+.textHeader {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 10px 0px;
+}
+.btnHeader {
+    display: flex;
+    position: absolute;
+    z-index: 999;
+    top: 50%;
+    left: 88%;
+    /* right: 1%; */
+    transform: translate(-50%, -50%);
+}
+
+.btnHeader form{
+    display: flex;
+}
+
+.btnHeader button {
+    padding: 10px 15px;
+    margin-right: 7px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.05s;
+}
+.btnHeader button:active {
+    background-color: black;
+    color: white;
+    transition: all 0.1s;
+    box-shadow: 0 2px #b4b4b4;
+    transform: translateY(1px);
+}
+.btnHeader input {
+    margin-right: 5px;
+}
+
+.planeTbl {
+    width: 100%;
+    border: 1px solid black;
+    background-color: #fdb3ca;
+    border-collapse: collapse;
+}
+.planeTblBody {
+    padding: 10px 5px;
+}
+.planeTblRow {
+    text-align: center;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+.planeTblRow td {
+    background-color: rgb(248, 241, 241);
+    border: 1px solid rgb(70, 70, 70);
+}
+.planeTblRow td button {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 30px;
+    margin: 5px 8px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.1s;
+}
+.planeTblRow td button:active {
+    background-color: black;
+    color: white;
+    transition: all 0.05s;
+    box-shadow: 0 2px #b4b4b4;
+    transform: translateY(1px);
+}
+.planeTbl th {
+    text-align: center;
+    width: 20%;
+    height: 34px;
+    border: 1px solid black;
+}

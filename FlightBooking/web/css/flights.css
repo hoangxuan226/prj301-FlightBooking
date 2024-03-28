@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url("../images/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+.container {
+    margin: 0;
+}
+.header {
+    background-color: white;
+}
+.detailedInfo {
+    display: flex;
+    height: 100px;
+}
+.left-col,
+.mid-col,
+.right-col {
+    flex-wrap: wrap;
+    text-align: center;
+    box-shadow: 0px 0px 1px 1px rgb(193, 193, 193);
+    width: 34%;
+}
+
+.left-col {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 1px;
+}
+.left-col-1,
+.left-col-3 {
+    margin-top: 15px;
+}
+.left-col-2 {
+    margin-top: 30px;
+}
+.left-col-1,
+.left-col-2,
+.left-col-3 {
+    display: flex;
+    flex-direction: column;
+}
+.mid-col {
+    padding-top: 22px;
+}
+.txtLeftCol {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.passengerAmount {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2px;
+}
+.iconPass {
+    height: 20px;
+    width: 20px;
+    margin-left: 2px;
+}
+.iconPass img {
+    height: 100%;
+    width: 100%;
+}
+/* body list */
+.list-left-col {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 1px;
+}
+.list-left-col {
+    flex-wrap: wrap;
+    text-align: center;
+    box-shadow: 0px 0px 1px 1px rgb(193, 193, 193);
+    width: 34%;
+}
+.list-left-col-1,
+.list-left-col-2,
+.list-left-col-3 {
+    display: flex;
+    flex-direction: column;
+    padding: 18px 0px;
+    justify-content: flex-end;
+}
+.body {
+    padding: 40px 150px 0px 150px;
+}
+.detailedInfoList {
+    display: flex;
+    margin-bottom: 20px;
+}
+.list-left-col,
+.list-mid-col,
+.list-right-col {
+    flex-wrap: wrap;
+    text-align: center;
+    box-shadow: 0px 0px 2px 2px rgb(193, 193, 193);
+    width: 34%;
+    background-color: rgb(255, 245, 252);
+}
+.list-left-col {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 1px;
+}
+.list-right-col {
+    display: flex;
+    justify-content: space-around;
+}
+
+.list-right-col a{
+    width: 50%;
+    box-shadow: 0px 0px 1px 1px rgb(193, 193, 193);
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.1s;
+}
+
+.clickable:hover {
+    background-color: rgb(249, 218, 239);
+}
+
+.clickable:active {
+    transition: 0.1s;
+    box-shadow: 0px 0px 2px 2px rgb(193, 193, 193);
+    transform: translateY(1px);
+}
+
+a.disabled {
+    pointer-events: none;
+    cursor: default;
+}
+
+.txtRightCol {
+    font-weight: bold;
+    margin-bottom: 1px;
+}
+.notFoundFlightTxt {
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.findPlaneBtn {
+    text-align: center;
+    font-size: larger;
+    font-weight: 600;
+}
+.findPlaneBtn a {
+    color: rgb(111, 1, 61);
+    text-decoration: none;
+}
+.findPlaneBtn :hover {
+    color: black;
+    text-decoration: underline;
+    transition: 1s;
+}
+
+

@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Times New Roman", Times, serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+}
+.logoContent {
+    display: flex;
+}
+.logo {
+    margin: 10px 0px 10px 10px;
+}
+.logo img {
+    height: 70px;
+    width: 60px;
+}
+.textLogo {
+    padding-top: 15px;
+    height: 75px;
+    width: 300px;
+}
+.textLogo img {
+    height: 100%;
+    width: 100%;
+}
+.userAction {
+    display: flex;
+    padding: 30px 30px;
+}
+.login,
+.welcome {
+    padding-right: 20px;
+    border-right: 2px solid black;
+}
+.login a,
+.register a,
+.welcome a,
+.logout a {
+    text-decoration: none;
+    color: rgb(111, 1, 61);
+    font-weight: bold;
+}
+
+.register,
+.logout {
+    padding: 0px 10px 0px 20px;
+}
+
+.login:hover,
+.register:hover, 
+.user-btn:hover, 
+.logout:hover{
+    text-decoration: underline;
+    color: black;
+}
+.icon img {
+    height: 20px;
+    width: 20px;
+}
